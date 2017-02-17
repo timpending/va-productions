@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="61px" viewBox="0 0 31 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Diamond 19.28w x 50h</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.2784932,6.13627466 C15.4620091,5.65122504 15.755184,5.64984463 15.9385228,6.14731539 L24.9667829,30.6445626 C25.1477912,31.1357099 25.1454712,31.9226606 24.9567937,32.4148057 L16.1428333,55.4050763 C15.9563081,55.8916073 15.6451754,55.899117 15.4427413,55.4093716 L5.98614554,32.531199 C5.78602058,32.0470402 5.77271499,31.2609223 5.95607231,30.776292 L15.2784932,6.13627466 L15.2784932,6.13627466 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="29.2736156" height="60">
+            <rect x="0.826843266" y="0.77334098" width="29.2736156" height="60" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Diamond-19.28w-x-50h">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use stroke="#26C6DA" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
