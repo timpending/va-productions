@@ -318,17 +318,11 @@ video #bgvid {
   padding: 100px 0;
   min-height:500px;
   color: white;
-  /*background: url(images/golf.jpg) no-repeat center center scroll;*/
   background-color: black;
-  /*-webkit-background-size: cover;*/
-  /*-moz-background-size: cover;*/
-  /*background-size: cover;*/
-  /*-o-background-size: cover;*/
 }
 .category {
-  position: absolute;
   width: 100%;
-  min-height:500px;
+  min-height:360px;
   background:url(images/hands.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
@@ -336,16 +330,38 @@ video #bgvid {
   background-size: cover;
   -o-background-size: cover;
 }
-
-/*.category img {
-  display: block;
-  width: 100%;
-  height: auto;
-}*/
+.events-category {
+  background:url(images/hands.jpg) no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.drone-category {
+  background:url(images/drone.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.commercial-category {
+  background:url(images/photoshoot.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.real-estate-category {
+  background:url(images/house.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 
 .category-body {
   height: 100%;
-  margin: 50% auto;
 }
 .category-body-hover{
   position: absolute;
