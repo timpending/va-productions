@@ -345,13 +345,6 @@ video #bgvid {
   background-size: cover;
   -o-background-size: cover;
 }
-.commercial-category {
-  background:url(images/photoshoot.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
 .real-estate-category {
   background:url(images/house.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -359,7 +352,13 @@ video #bgvid {
   background-size: cover;
   -o-background-size: cover;
 }
-
+.commercial-category {
+  background:url(images/photoshoot.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 .category-body {
   height: 100%;
 }
@@ -375,12 +374,25 @@ video #bgvid {
   opacity: 0;
   border: 20px solid rgba(85, 235, 255, .4);
   background-color: rgba(255, 255, 255, .9);
-
 }
-.category-body-hover:hover {
+.category-description {
+  position: absolute;
+  top:52%;
+  width: 100%;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  -webkit-transform: translateY(-55%);
+      -ms-transform: translateY(-55%);
+          transform: translateY(-55%);
+  opacity: 0;
+}
+.category-body-hover:hover,
+.category-body-hover:hover .category-description {
   opacity: 1;
 }
-
+.vimeo {
+  padding: 50px 0;
+}
 
 .download-section {
   width: 100%;
@@ -422,6 +434,9 @@ video #bgvid {
   -o-background-size: cover;
 }
 
+.fa {
+  color: rgba(85, 235, 255, 1);
+}
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
