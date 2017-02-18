@@ -1,10 +1,3 @@
-# Von Arden Productions
+# Von Arden Productions 2.0
 
 Website redesign for a freelance videographer based in Baltimore.
-
-
-###Ideas on what to Use:
-- SASS
-- jQuery
-- HTML
-- CSS
