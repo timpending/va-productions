@@ -1,23 +1,3 @@
-// Start Nav Hover Actions
-  var navPointer = function (elem) {
-    if ($(elem).length) {
-      var $thisa=$(elem).find("a")
-      var x=$thisa.position().left+$thisa.width()/2-7;
-    }
-    $(".menubottri").stop(true,false).animate({left: x});
-  }
-
-  navPointer('.menu li.current-menu-item');
-
-  $('.menu li').hover(
-    function (event) {
-      navPointer(this);
-    },
-    function (event) {
-      navPointer('.menu li.current-menu-item');
-    }
-  );
-
 // Start Collapse Navbar whilst Scrolling
   function collapseNavbar() {
       if ($(".navbar").offset().top > 100) {
@@ -48,3 +28,12 @@
   $('.navbar-collapse ul li a').click(function() {
       $(this).closest('.collapse').collapse('toggle');
   });
+
+  $(document).ready(function(){
+    $('.datepicker').pickadate({
+        dateFormat: 'mm/dd/yy',
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 5 // Creates a dropdown of 15 years to control year
+      });
+
+  }) // JQuery Document.Ready Closure

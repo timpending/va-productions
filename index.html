@@ -169,7 +169,7 @@
                             <div class="category-body-hover">
                               <div class="category-description">
                                   <p><a href="#"><i class="fa fa-eye fa-2x" aria-hidden="true"></i><br>
-                                    Aerial | Site Surveys</a></p>
+                                    Aerials | Site Surveys</a></p>
                             </div>
                             </div>
                           </div>
@@ -206,17 +206,16 @@
                   </div>
                 <div class="vimeo row">
                 <div class="col-lg-8 col-lg-offset-2">
-                  <p>Check Us Out on Vimeo for More</p>
-                  <a href="https://vimeo.com/vonardenproductions" class="btn btn-default btn-lg">Visit Vimeo</a>
+                  <a href="https://vimeo.com/vonardenproductions" class="btn btn-default btn-lg">Visit Our Vimeo for More</a>
                 </div>
               </div>
             </div>
-              </section>
+            </section>
 
 
           <!-- Contact Section -->
           <section id="contact" class="container content-section text-center">
-              <div class="row">
+              <!-- <div class="row">
                   <div class="col-lg-8 col-lg-offset-2">
                       <h2>Contact Start Bootstrap</h2>
                       <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
@@ -237,13 +236,113 @@
                           </li>
                       </ul>
                   </div>
+              </div> -->
+
+  <div class="row">
+  <h3 class="center">CONTACT</h3><br/>
+  </div>
+        <div class="form-div">
+          <div class="col-sm-12 col-md-4 col-md-offset-1">
+          <form id="contactForm" method="POST">
+            <div class="form-group row">
+            <label for="first-name" class="col-xs-4 col-form-label">Name</label>
+              <div class="input-field col-xs-8">
+                <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
               </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="email" class="col-xs-4 col-form-label">Email</label>
+              <div class="input-field col-xs-8">
+                <input class="form-control" type="text" name="_replyto" placeholder="Email" required="required"/>
+              </div>
+            </div>
+
+            <div class="form-group row">
+            <label for="phone" class="col-xs-4 col-form-label">Phone</label>
+              <div class="input-field col-xs-8">
+                <input class="form-control " type="text" name="phone" placeholder="Phone Number"/>
+              </div>
+            </div>
+
+            <div class="form-group row">
+            <label for="eventDate" class="col-xs-4 col-form-label">Event Date</label>
+              <div class="input-field col-xs-8">
+                <input type="date" class="form-control" name="eventDate" placeholder="Event Date" required="required" class="datepicker"/>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-sm-12 col-md-5">
+            <div class="form-group row">
+            <label for="eventLocation" class="col-xs-4 col-form-label">Address</label>
+              <div class="input-field col-xs-8">
+                <input class="form-control" checked="" type="text" name="eventLocation" placeholder="Event Location"/>
+              </div>
+            </div>
+
+            <div class="form-group row">
+            <label for="findOut" class="col-xs-4 col-form-label">Heard about us? <br>From Where?</label>
+              <div class="input-field col-xs-8">
+                <input type="text" class="form-control"  name="findOut" placeholder="How did you find out about us?"/>
+              </div>
+            </div>
+
+            <div class="form-group row">
+            <label for="eventDetails" class="col-xs-4 col-form-label"><br>Event Details</label>
+              <div class="input-field col-xs-8">
+                <textarea name="eventDetails" class="form-control" placeholder="Send us the details." rows=3></textarea>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="row">
+          <div class="col-xs-12 contact-btn">
+            <input type="hidden" name="_subject" value="Von Arden Contact"/>
+            <input type="text" name="_gotcha" style="display:none"/>
+            <input type="hidden" name="_next" value="http://www.vonardenproductions.com/thankyou"/>
+            <button type="submit" value="Send" class="btn btn-default btn-lg">Submit!</button>
+          </div>
+        </div>
+      </form>
+
+        </div>
+
+          <div class="map col-sm-12 col-md-6">
+            <h3>Homebase</h3>
+            <div class="video-container">
+              <iframe src="https://goo.gl/5HEkC2" width="500" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="contact-info">
+            <h3>Direct Info</h3><br/>
+            <div class="contact-subinfo align-middle"></div>
+            <div class="text-right col-xs-3"><p><span class="fa fa-user"></span></p></div>
+            <div class="text-left col-xs-9"><p>Eric Von Holtschneider</p></div>
+
+            <div class="text-right col-xs-3"><p><span class="fa fa-phone-square"></span></p></div>
+            <div class="text-left col-xs-9"><p>443-840-7868</p></div>
+            <div class="text-right col-xs-3"><p><span class="fa fa-envelope"></span></p></div>
+            <div class="text-left col-xs-9"><p>VonArdenProductions@gmail.com</</p></div>
+          </div>
+        </div>
+
+  </div>
+    <script>
+      var contactform =  document.getElementById('contactForm');
+      contactform.setAttribute('action', '//formspree.io/' + 'vo' +'nard' +'enprod' + 'uctions' + '@' + 'gm'+'ail' + '.' + 'com');
+    </script>
+
+
           </section>
 
           <!-- Footer -->
           <footer>
               <div class="container text-center">
-                  <p>Copyright &copy; Von Arden Productions 2016</p>
+                  <p>Copyright &copy; Von Arden Productions 2017</p>
               </div>
           </footer>
 
