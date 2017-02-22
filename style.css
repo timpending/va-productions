@@ -1,44 +1,3 @@
-/*nav ul.menu:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-nav ul.menu li {
-  padding: 0 33px;
-  float: left;
-  list-style-type: none;
-}
-nav ul.menu li:last-child {
-  padding-right: 0px;
-}
-nav ul.menu li:first-child {
-  padding-left: 0px;
-}
-nav ul.menu li.current-menu-item a, nav ul.menu li:hover a {
-  opacity: 0.8;
-}
-nav ul.menu li a {
-  font-weight: normal;
-  font-size: 22px;
-  text-decoration: none;
-  font-family: 'Raleway', Microsoft JhengHei, sans-serif, Helvetica, Arial, PMingLiU;
-  position: relative;
-  color: purple;
-  line-height: 64px;
-}*/
-
-.menubottri {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 7px 7px 0px 7px;
-  border-color: #FFF transparent transparent transparent;
-  position: absolute;
-  top: 0;
-}
-
-/* Start Themeing */
-
 body {
   width: 100%;
   height: 100%;
@@ -302,6 +261,78 @@ video #bgvid {
     transform: scale(1);
   }
 }
+/**** START TEST ***/
+.back-btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 3px 5px;
+  border: 1px solid white;
+  border-radius: 100% !important;
+  font-size: 15px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.test {
+  display: inline-block;
+  padding: 9px 10px;
+}
+.back-btn-circle:hover,
+.back-btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.back-btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.back-btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+/*** END TEST ***/
+
 .about-body {
   padding-top: 100px;
   padding-left: 15px;
@@ -531,4 +562,13 @@ body {
 
 .footer-icon {
   margin-right:15px;
+}
+
+/* Portfolio Stylings */
+.portfolio-hero {
+  top: 500px;
+  height: 100vh;
+  background: no-repeat bottom center scroll linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url('images/courts.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
 }
