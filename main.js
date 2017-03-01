@@ -30,10 +30,22 @@
   });
 
   $(document).ready(function(){
-    $('.datepicker').pickadate({
-        dateFormat: 'mm/dd/yy',
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 5 // Creates a dropdown of 15 years to control year
+      var videoSrc = '';
+      var videoID = '';
+      // Video Modal Launch Listener
+      $('.launch-modal').on('click', function(e){
+          e.preventDefault();
+          $( '#' + $(this).data('modal-id') ).modal();
+          videoSrc = $( '#' + $(this).data('modal-id') ).attr('src');
+          videoID = $(this).data('modal-id');
+      });
+
+      // Reset Video player on close
+      $('.close').on('click', function(e){
+        var videoSrc =  $( $('#'+videoID).find('.embed-responsive')[0].children[0])[0].src
+        var iframeDiv = $( $('#'+videoID).find('.embed-responsive')[0].children[0])[0]
+        iframeDiv.src = '';
+        iframeDiv.src = videoSrc;
       });
 
   }) // JQuery Document.Ready Closure
